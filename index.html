@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Carbon Footprint Assistant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Carbon Footprint Assistant</h1>
+    <p>Track your daily emissions and get personalized tips.</p>
+  </header>
+
+  <main>
+    <section aria-labelledby="persona-title">
+      <h2 id="persona-title">Your profile</h2>
+      <label for="persona">Choose your persona:</label>
+      <select id="persona">
+        <option value="student">Student</option>
+        <option value="office">Office worker</option>
+        <option value="remote">Remote worker</option>
+        <option value="other">Other</option>
+      </select>
+    </section>
+
+    <section aria-labelledby="activity-title">
+      <h2 id="activity-title">Daily activities</h2>
+
+      <form id="activity-form">
+        <fieldset>
+          <legend>Transport (km per day)</legend>
+          <label for="carKm">Car (km)</label>
+          <input type="number" id="carKm" min="0" step="0.1">
+
+          <label for="busKm">Bus (km)</label>
+          <input type="number" id="busKm" min="0" step="0.1">
+
+          <label for="bikeKm">Bike/Cycle (km)</label>
+          <input type="number" id="bikeKm" min="0" step="0.1">
+        </fieldset>
+
+        <fieldset>
+          <legend>Home energy</legend>
+          <label for="electricityKwh">Electricity (kWh per day)</label>
+          <input type="number" id="electricityKwh" min="0" step="0.1">
+        </fieldset>
+
+        <fieldset>
+          <legend>Food (meals per day)</legend>
+          <label for="vegMeals">Vegetarian meals</label>
+          <input type="number" id="vegMeals" min="0" step="1">
+
+          <label for="nonVegMeals">Non-vegetarian meals</label>
+          <input type="number" id="nonVegMeals" min="0" step="1">
+        </fieldset>
+
+        <button type="submit">Calculate footprint</button>
+      </form>
+    </section>
+
+    <section aria-labelledby="result-title">
+      <h2 id="result-title">Today’s footprint</h2>
+      <p id="total-output">Enter your data and click "Calculate".</p>
+      <ul id="breakdown-output"></ul>
+    </section>
+
+    <section aria-labelledby="advice-title">
+      <h2 id="advice-title">Assistant insight</h2>
+      <p id="advice-output">Your personalized tips will appear here.</p>
+    </section>
+
+    <section aria-labelledby="history-title">
+      <h2 id="history-title">Last 7 days</h2>
+      <ul id="history-output"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Data stays in your browser (localStorage). Emission factors are approximate.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
