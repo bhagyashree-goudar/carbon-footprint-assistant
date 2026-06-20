@@ -264,6 +264,22 @@ The application incorporates:
 
 ---
 
+## Application Screenshots
+
+### Home Page
+
+![Home Page](screenshots/homepage.png)
+
+### Carbon Footprint Results
+
+![Results](screenshots/calculation-result.png)
+
+### Test Execution
+
+![Tests](screenshots/tests-passed.png)
+
+---
+
 ## Repository
 
 GitHub Repository:
