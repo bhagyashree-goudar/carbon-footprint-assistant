@@ -279,6 +279,10 @@ GitHub Repository:
 
 https://github.com/bhagyashree-goudar/carbon-footprint-assistant
 
+Deployed Link
+
+https://carbon-footprint-assistant.onrender.com
+
 ---
 
 Built as part of the PromptWars Virtual Challenge to promote sustainability awareness through AI-powered recommendations and practical environmental insights.
