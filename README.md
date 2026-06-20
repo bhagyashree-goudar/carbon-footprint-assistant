@@ -274,9 +274,7 @@ The application incorporates:
 
 ![Results](screenshots/calculation-result.png)
 
-### Test Execution
 
-![Tests](screenshots/tests-passed.png)
 
 ---
 
