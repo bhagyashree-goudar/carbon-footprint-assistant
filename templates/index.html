@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <title>Carbon Footprint Assistant</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  
+  
 </head>
 <body>
   <header>
@@ -27,7 +29,8 @@
     <section aria-labelledby="activity-title">
       <h2 id="activity-title">Daily activities</h2>
 
-      <form id="activity-form">
+      
+      <form id="eco-form">
         <fieldset>
           <legend>Transport (km per day)</legend>
           <label for="carKm">Car (km)</label>
@@ -80,6 +83,7 @@
     <p>Data stays in your browser (localStorage). Emission factors are approximate.</p>
   </footer>
 
-  <script src="script.js"></script>
+  
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
