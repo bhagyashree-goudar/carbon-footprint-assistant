@@ -264,16 +264,11 @@ The application incorporates:
 
 ---
 
-## Application Screenshots
+##Screenshots
 
-### Home Page
+![Home Page](home.png)
 
-![Home Page](screenshots/homepage.png)
-
-### Carbon Footprint Results
-
-![Results](screenshots/calculation-result.png)
-
+![Results](result.png)
 
 
 ---
